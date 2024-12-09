@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>예약 확인</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>예약 확인</h1>
+    <p>예약 날짜: <strong><%= request.getParameter("date") %></strong></p>
+    <p>예약 시간: <strong><%= request.getParameter("time") %></strong></p>
+    <p>인원 수: <strong><%= request.getParameter("people") %>명</strong></p>
+    <p>예약이 성공적으로 완료되었습니다!</p>
+</body>
+</html>
